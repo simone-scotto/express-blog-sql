@@ -1,8 +1,9 @@
 const express = require("express");
 const app = express();
-const port = 3050;
+const port = 3070;
 const routersPost = require(`./routers/posts`);
 const error = require("./middlewear/error");
+const connection = require("./db/connection");
 
 app.use(express.static("public"));
 app.use(express.json());
